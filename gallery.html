@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Luxe Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-rose-600">Luxe Salon</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-rose-600 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-rose-600 font-medium">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-rose-600 font-medium">About</a>
+                    <a href="gallery.html" class="text-rose-600 font-medium">Gallery</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-rose-600 font-medium">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition duration-300">Book Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-rose-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-rose-600">Home</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-rose-600">Services</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-rose-600">About</a>
+                <a href="gallery.html" class="block py-2 text-rose-600">Gallery</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-rose-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-r from-rose-50 to-pink-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold text-gray-800 mb-6">Our Gallery</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Explore our portfolio of beautiful transformations and stunning results
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition duration-300" data-filter="all">
+                    All
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-rose-600 hover:text-white transition duration-300" data-filter="hair">
+                    Hair
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-rose-600 hover:text-white transition duration-300" data-filter="facial">
+                    Facial
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-rose-600 hover:text-white transition duration-300" data-filter="nails">
+                    Nails
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-rose-600 hover:text-white transition duration-300" data-filter="makeup">
+                    Makeup
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Hair Images -->
+                <div class="gallery-item hair group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/2301842/pexels-photo-2301842.jpeg" alt="Hair Styling 1" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item hair group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/1727273/pexels-photo-1727273.jpeg?auto=format&fit=crop&w=400&q=80" alt="Hair Coloring 1" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item hair group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/2779320/pexels-photo-2779320.jpeg" alt="Hair Styling 2" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item hair group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/2693618/pexels-photo-2693618.jpeg" alt="Hair Coloring 2" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facial Images -->
+                <div class="gallery-item facial group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/6543486/pexels-photo-6543486.jpeg" alt="Facial Treatment 1" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item facial group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/7608060/pexels-photo-7608060.jpeg" alt="Facial Treatment 2" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nail Images -->
+                <div class="gallery-item nails group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/19239100/pexels-photo-19239100.jpeg" alt="Nail Art 1" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item nails group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/7664093/pexels-photo-7664093.jpeg" alt="Nail Art 2" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item nails group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/3557600/pexels-photo-3557600.jpeg" alt="Manicure 1" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Makeup Images -->
+                <div class="gallery-item makeup group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/32741578/pexels-photo-32741578.png" alt="Makeup 1" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item makeup group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/32741578/pexels-photo-32741578.png" alt="Makeup 2" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item makeup group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md">
+                        <img src="https://images.pexels.com/photos/32741578/pexels-photo-32741578.png" alt="Bridal Makeup" class="w-full h-80 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-rose-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready for Your Transformation?</h2>
+            <p class="text-xl text-gray-600 mb-8">Book your appointment today and join our gallery of beautiful results</p>
+            <a href="contact.html" class="bg-rose-600 text-white px-8 py-3 rounded-full hover:bg-rose-700 transition duration-300 text-lg">
+                Book Your Appointment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-rose-400 mb-4">Luxe Salon</h3>
+                    <p class="text-gray-300 mb-4">Your premier destination for luxury beauty services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-rose-400">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-rose-400">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rose-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Hair Styling</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Facial Treatments</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Nail Care</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Makeup</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 Beauty Street, City</p>
+                        <p><i class="fas fa-phone mr-2"></i>(555) 123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@luxesalon.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Luxe Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Gallery filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-rose-600', 'text-white');
+                    b.classList.add('bg-gray-200', 'text-gray-700');
+                });
+
+                // Add active class to clicked button
+                btn.classList.add('active', 'bg-rose-600', 'text-white');
+                btn.classList.remove('bg-gray-200', 'text-gray-700');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Luxe Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-rose-600">Luxe Salon</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-rose-600 font-medium">Home</a>
+                    <a href="services.html" class="text-rose-600 font-medium">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-rose-600 font-medium">About</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-rose-600 font-medium">Gallery</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-rose-600 font-medium">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition duration-300">Book Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-rose-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-rose-600">Home</a>
+                <a href="services.html" class="block py-2 text-rose-600">Services</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-rose-600">About</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-rose-600">Gallery</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-rose-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-r from-rose-50 to-pink-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold text-gray-800 mb-6">Our Services</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover our comprehensive range of beauty services designed to enhance your natural beauty
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Hair Services -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Hair Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Hair Cut & Styling</h3>
+                        <p class="text-gray-600 mb-4">Professional cuts and styling for all hair types and lengths</p>
+                        <div class="text-2xl font-bold text-rose-600">$45 - $85</div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Hair Coloring</h3>
+                        <p class="text-gray-600 mb-4">Full color, highlights, lowlights, and color correction</p>
+                        <div class="text-2xl font-bold text-rose-600">$80 - $200</div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Hair Treatments</h3>
+                        <p class="text-gray-600 mb-4">Deep conditioning, keratin treatments, and hair masks</p>
+                        <div class="text-2xl font-bold text-rose-600">$60 - $150</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facial Services -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Facial Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Classic Facial</h3>
+                        <p class="text-gray-600 mb-4">Deep cleansing facial with extraction and moisturizing</p>
+                        <div class="text-2xl font-bold text-rose-600">$75</div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Anti-Aging Facial</h3>
+                        <p class="text-gray-600 mb-4">Advanced treatment to reduce fine lines and wrinkles</p>
+                        <div class="text-2xl font-bold text-rose-600">$120</div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Hydrating Facial</h3>
+                        <p class="text-gray-600 mb-4">Intensive hydration treatment for dry and sensitive skin</p>
+                        <div class="text-2xl font-bold text-rose-600">$90</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nail Services -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Nail Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Classic Manicure</h3>
+                        <p class="text-gray-600 mb-4">Nail shaping, cuticle care, and polish application</p>
+                        <div class="text-2xl font-bold text-rose-600">$35</div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Gel Manicure</h3>
+                        <p class="text-gray-600 mb-4">Long-lasting gel polish with UV curing</p>
+                        <div class="text-2xl font-bold text-rose-600">$50</div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-3xl text-rose-600 mb-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Pedicure</h3>
+                        <p class="text-gray-600 mb-4">Foot care, nail shaping, and relaxing massage</p>
+                        <div class="text-2xl font-bold text-rose-600">$45</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Packages -->
+            <div class="bg-rose-50 rounded-lg p-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Special Packages</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Bridal Package</h3>
+                        <p class="text-gray-600 mb-4">Complete bridal makeover including hair, makeup, and nails</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li>• Hair styling and trial</li>
+                            <li>• Professional makeup</li>
+                            <li>• Manicure and pedicure</li>
+                            <li>• Facial treatment</li>
+                        </ul>
+                        <div class="text-3xl font-bold text-rose-600">$350</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Spa Day Package</h3>
+                        <p class="text-gray-600 mb-4">Full day of relaxation and beauty treatments</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li>• Facial treatment</li>
+                            <li>• Hair wash and style</li>
+                            <li>• Manicure and pedicure</li>
+                            <li>• Complimentary refreshments</li>
+                        </ul>
+                        <div class="text-3xl font-bold text-rose-600">$250</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Book Your Appointment?</h2>
+            <p class="text-xl mb-8">Contact us today to schedule your beauty transformation</p>
+            <a href="contact.html" class="bg-rose-600 text-white px-8 py-3 rounded-full hover:bg-rose-700 transition duration-300 text-lg">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-rose-400 mb-4">Luxe Salon</h3>
+                    <p class="text-gray-300 mb-4">Your premier destination for luxury beauty services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-rose-400">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-rose-400">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rose-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Hair Styling</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Facial Treatments</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Nail Care</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Makeup</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 Beauty Street, City</p>
+                        <p><i class="fas fa-phone mr-2"></i>(555) 123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@luxesalon.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Luxe Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
