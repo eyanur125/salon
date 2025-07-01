@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Salon - Premium Hair & Beauty Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-rose-600">Luxe Salon</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-rose-600 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-rose-600 font-medium">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-rose-600 font-medium">About</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-rose-600 font-medium">Gallery</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-rose-600 font-medium">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition duration-300">Book Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-rose-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-rose-600">Home</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-rose-600">Services</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-rose-600">About</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-rose-600">Gallery</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-rose-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-r from-rose-50 to-pink-50 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                        Transform Your 
+                        <span class="text-rose-600">Beauty</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Experience luxury hair and beauty services in our premium salon. 
+                        Our expert stylists are here to make you look and feel amazing.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="bg-rose-600 text-white px-8 py-3 rounded-full hover:bg-rose-700 transition duration-300 text-center">
+                            Book Appointment
+                        </a>
+                        <a href="services.html" class="border-2 border-rose-600 text-rose-600 px-8 py-3 rounded-full hover:bg-rose-600 hover:text-white transition duration-300 text-center">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg" alt="Salon Interior" class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center">
+                            <div class="text-3xl font-bold text-rose-600">500+</div>
+                            <div class="ml-3 text-gray-600">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Professional beauty services tailored just for you</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-rose-600 mb-4">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Hair Styling</h3>
+                    <p class="text-gray-600 mb-6">Professional cuts, colors, and styling for all hair types</p>
+                    <a href="services.html" class="text-rose-600 font-medium hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-rose-600 mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Facial Treatments</h3>
+                    <p class="text-gray-600 mb-6">Rejuvenating facials and skincare treatments</p>
+                    <a href="services.html" class="text-rose-600 font-medium hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-rose-600 mb-4">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Nail Care</h3>
+                    <p class="text-gray-600 mb-6">Manicures, pedicures, and nail art services</p>
+                    <a href="services.html" class="text-rose-600 font-medium hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-20 bg-rose-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg" alt="Salon Team" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Luxe Salon</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        With over 15 years of experience in the beauty industry, Luxe Salon has been 
+                        the premier destination for luxury hair and beauty services. Our team of expert 
+                        stylists and beauty professionals are dedicated to helping you look and feel your best.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <div class="text-3xl font-bold text-rose-600">15+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-rose-600">10+</div>
+                            <div class="text-gray-600">Expert Stylists</div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="bg-rose-600 text-white px-8 py-3 rounded-full hover:bg-rose-700 transition duration-300">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-rose-400 mb-4">Luxe Salon</h3>
+                    <p class="text-gray-300 mb-4">Your premier destination for luxury beauty services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-rose-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-rose-400">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-rose-400">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rose-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Hair Styling</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Facial Treatments</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Nail Care</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-400">Makeup</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 Beauty Street, City</p>
+                        <p><i class="fas fa-phone mr-2"></i>(555) 123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@luxesalon.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Luxe Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
